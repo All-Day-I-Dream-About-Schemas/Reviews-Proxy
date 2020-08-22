@@ -1,0 +1,39 @@
+#adidas {
+  display: flex;
+  display: grid;
+  grid-auto-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+}
+#banner {
+  grid-area: banner;
+  height: 500px;
+  border-bottom: 1px solid grey;
+}
+
+#imageCarousel {
+  flex: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#sidebar {
+  flex: 1;
+  position: sticky;
+  grid-column-start: 3;
+  grid-row-start: 1;
+  z-index: 100;
+  top: 20px;
+  /* grid-area: sidebar; */
+  /* overflow-y: scroll; */
+}
+#app {
+  flex: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  border-right: 1px solid gray;
+}
