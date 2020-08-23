@@ -7,7 +7,7 @@ const path = require('path')
 app.use(express.static(__dirname + '/../client/dist'));
 
 app.get('/sidebar/summary', function (req, res) {
-  axios.get('http://54.176.46.102:3380/sidebar/summary')
+  axios.get('http://13.57.255.31:3380/sidebar/summary')
     .then(response => {
       res.send(response.data)
     })
@@ -15,7 +15,7 @@ app.get('/sidebar/summary', function (req, res) {
 })
 
 app.get('/kix', function (req, res) {
-  axios.get('http://ec2-54-176-93-251.us-west-1.compute.amazonaws.com/kix')
+  axios.get('http://ec2-13-52-180-39.us-west-1.compute.amazonaws.com//kix')
     .then(response => {
       res.status(200).send(response.data)
     })
